@@ -1,12 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <h1>Teste portfólio </h1>
-    <img src="assets/images/MyFoto.jpg" alt="Imagem de teste">
+    <nav>
+        <div class="nav-logo">Graciano</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="informacoes.html">Informações</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="home">
+            <div class="home-content">
+                <div class="background-image"></div>
+                <img src="/docs/assets/images/Eu.png" alt="Minha Foto" class="profile-pic">
+                <div class="sobre-mim">
+                    <h1>Felipe Augusto Graciano</h1>
+                    <p>Desenvolvimento de Software Multiplataforma</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Felipe - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="assets/js/Neve.js"></script>
+    <script>
+        setInterval(createSnowflake, 200);
+    </script>
+
 </body>
+
 </html>

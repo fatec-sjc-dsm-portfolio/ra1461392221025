@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Felipe</title>
+    <link rel="stylesheet" href="assets/css/styleP.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-logo">Graciano</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="informacoes.html">Informações</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="projetos">
+            <h1>Meus Projetos</h1>
+            <div class="projetos-container">
+                <div class="projeto-card">
+                    <img src="assets/images/Pynk.png" alt="Projeto 1">
+                    <h2>Projeto 1</h2>
+                    <button class="open-modal" data-projeto="projeto1">Saiba mais</button>
+                </div>
+
+                <!-- <div class="projeto-card">
+                    <img src="assets/images/Pynk.png" alt="Projeto 2">
+                    <h2>Projeto 2</h2>
+                    <button class="open-modal" data-projeto="projeto2">Saiba mais</button>
+                </div>
+
+                <div class="projeto-card">
+                    <img src="assets/images/Pynk.png" alt="Projeto 3">
+                    <h2>Projeto 3</h2>
+                    <button class="open-modal" data-projeto="projeto3">Saiba mais</button>
+                </div>
+
+                <div class="projeto-card">
+                    <img src="assets/images/Pynk.png" alt="Projeto 4">
+                    <h2>Projeto 4</h2>
+                    <button class="open-modal" data-projeto="projeto4">Saiba mais</button>
+                </div>
+
+                <div class="projeto-card">
+                    <img src="assets/images/Pynk.png" alt="Projeto 5">
+                    <h2>Projeto 5</h2>
+                    <button class="open-modal" data-projeto="projeto5">Saiba mais</button>
+                </div>
+
+                <div class="projeto-card">
+                    <img src="assets/images/Pynk.png" alt="Projeto 6">
+                    <h2>Projeto 6</h2>
+                    <button class="open-modal" data-projeto="projeto6">Saiba mais</button>
+                </div> -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Felipe - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Modal único para todos os projetos -->
+    <div id="modal-projeto" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+            <a id="modal-link" href="#" target="_blank" class="modal-link">Ver no GitHub</a>
+        </div>
+    </div>
+
+    <script src="assets/js/Neve.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script>
+        setInterval(createSnowflake, 200);
+    </script>
+</body>
+
+</html>

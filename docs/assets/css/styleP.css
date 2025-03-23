@@ -1,0 +1,203 @@
+/* Importando as fontes */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@400;600&family=Cinzel&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos gerais */
+body {
+    background-color: #A6DCEF; /* Gelo Profundo */
+    text-align: center;
+    color: #EDEFF2; /* Branco Neve */
+    overflow: hidden;
+}
+
+nav {
+    background: #1D2A44; /* Azul Noturno */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #E3B23C;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #EDEFF2; /* Branco Neve */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav ul li a:hover {
+    color: #E3B23C; /* Amarelo Dourado */
+}
+
+.projetos {
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.projetos h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1D2A44; /* Azul Noturno */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projeto-card {
+    background-color: #1D2A44;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.projeto-card h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #EDEFF2;
+}
+
+.projeto-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.projeto-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Botão do modal */
+.open-modal {
+    background-color: #3A8FB7;
+    color: #EDEFF2;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.open-modal:hover {
+    background-color: #E3B23C;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #1D2A44;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #EDEFF2;
+    width: 400px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.close {
+    color: #E3B23C;
+    font-size: 24px;
+    cursor: pointer;
+    float: right;
+}
+
+.close:hover {
+    color: #FFFFFF;
+}
+
+.modal-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #3A8FB7;
+    color: #EDEFF2;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.modal-link:hover {
+    background-color: #E3B23C;
+}
+
+footer {
+    background: #1D2A44; /* Azul Noturno */
+    color: #EDEFF2; /* Branco Neve */
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Efeito de neve */
+.snowflake {
+    position: fixed;
+    top: -10px;
+    left: 50%;
+    font-size: 10px;
+    color: #EDEFF2;
+    animation: snowfall linear infinite;
+    opacity: 0.8;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    100% {
+        transform: translateY(100vh) translateX(-10px);
+    }
+}
+
