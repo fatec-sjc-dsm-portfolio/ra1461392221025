@@ -1,0 +1,118 @@
+/* Importando as fontes */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@400;600&family=Cinzel&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos gerais */
+body {
+    background-color: #A6DCEF; /* Gelo Profundo */
+    text-align: center;
+    color: #EDEFF2; /* Branco Neve */
+    overflow-x: hidden;
+}
+
+nav {
+    background: #1D2A44; /* Azul Noturno */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #E3B23C;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #EDEFF2; /* Branco Neve */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+nav ul li a:hover {
+    color: #E3B23C; /* Amarelo Dourado */
+}
+
+.informacoes {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.informacoes h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1D2A44;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.informacoes h2 {
+    font-size: 22px;
+    color: #E3B23C;
+    margin-top: 20px;
+}
+
+.informacoes p, .informacoes ul {
+    font-size: 16px;
+    color: #1D2A44;
+    opacity: 0.9;
+    margin: 10px 0;
+}
+
+.informacoes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.informacoes ul li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.informacoes a {
+    color: #E3B23C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.informacoes a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #1D2A44;
+    color: #EDEFF2;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
