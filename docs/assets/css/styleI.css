@@ -13,10 +13,8 @@
 /* Estilos gerais */
 body {
     background-color: #A6DCEF;
-    /* Gelo Profundo */
     text-align: center;
     color: #EDEFF2;
-    /* Branco Neve */
     overflow-x: hidden;
 }
 
@@ -60,7 +58,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav ul li a:hover {
