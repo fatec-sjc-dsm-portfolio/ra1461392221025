@@ -1,12 +1,14 @@
 /* Importando as fontes */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@400;600&family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
 
 /* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -25,10 +27,16 @@ nav {
 }
 
 .nav-logo {
-    font-family: 'Cinzel', serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: #E3B23C;
+    display: flex;
+    align-items: center;
+    height: 50px; /* altura controlada pela nav */
+    overflow: hidden; /* impede que a imagem \"estoure\" */
+}
+
+.logo-img {
+    height: 70px; /* logo maior */
+    width: auto;
+    
 }
 
 nav ul {
@@ -48,7 +56,7 @@ nav ul li a {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav ul li a:hover {
@@ -89,7 +97,7 @@ nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     max-width: 400px;
     color: #EDEFF2; /* Branco Neve */
-    font-family: 'Cinzel', serif;
+    font-family: 'Mont', serif;
 }
 
 button {

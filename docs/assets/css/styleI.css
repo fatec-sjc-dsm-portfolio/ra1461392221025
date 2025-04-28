@@ -1,5 +1,6 @@
 /* Importando as fontes */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:wght@400;600&family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
 /* Reset básico */
 * {
@@ -11,14 +12,17 @@
 
 /* Estilos gerais */
 body {
-    background-color: #A6DCEF; /* Gelo Profundo */
+    background-color: #A6DCEF;
+    /* Gelo Profundo */
     text-align: center;
-    color: #EDEFF2; /* Branco Neve */
+    color: #EDEFF2;
+    /* Branco Neve */
     overflow-x: hidden;
 }
 
 nav {
-    background: #1D2A44; /* Azul Noturno */
+    background: #1D2A44;
+    /* Azul Noturno */
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
@@ -26,10 +30,16 @@ nav {
 }
 
 .nav-logo {
-    font-family: 'Cinzel', serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: #E3B23C;
+    display: flex;
+    align-items: center;
+    height: 50px; /* altura controlada pela nav */
+    overflow: hidden; /* impede que a imagem \"estoure\" */
+}
+
+.logo-img {
+    height: 70px; /* logo maior */
+    width: auto;
+    
 }
 
 nav ul {
@@ -45,7 +55,8 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #EDEFF2; /* Branco Neve */
+    color: #EDEFF2;
+    /* Branco Neve */
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -53,37 +64,46 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #E3B23C; /* Amarelo Dourado */
+    color: #E3B23C;
+    /* Amarelo Dourado */
 }
+
+/* Estilos para a seção de projetos */
 
 .informacoes {
     padding: 50px 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    max-width: 1100px;
+    margin: 50px auto;
+    background: rgba(29, 42, 68, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    color: #EDEFF2;
 }
 
-.informacoes h1 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #1D2A44;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px;
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #E3B23C; /* Amarelo Dourado */
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
 }
 
-.informacoes h2 {
-    font-size: 22px;
-    color: #E3B23C;
-    margin-top: 20px;
+.foto-perfil:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.informacoes h1, .informacoes h2 {
+    color: #E3B23C; /* Amarelo Dourado */
 }
 
 .informacoes p, .informacoes ul {
+    color: #EDEFF2;
     font-size: 16px;
-    color: #1D2A44;
-    opacity: 0.9;
-    margin: 10px 0;
+    line-height: 1.6;
+    text-align: left;
 }
 
 .informacoes ul {
@@ -108,11 +128,17 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+.lista-conhecimentos li {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
 footer {
     background: #1D2A44;
     color: #EDEFF2;
     padding: 15px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    margin-top: 30px;
 }

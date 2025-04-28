@@ -10,7 +10,9 @@
 
 <body>
     <nav>
-        <div class="nav-logo">Graciano</div>
+        <div class="nav-logo">
+            <img src="assets/images/GnarLogo.png" alt="Logo Graciano" class="logo-img">
+        </div>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="projetos.html">Projetos</a></li>
@@ -24,16 +26,16 @@
             <div class="projetos-container">
                 <div class="projeto-card">
                     <img src="assets/images/Pynk.png" alt="Projeto 1">
-                    <h2>Projeto 1</h2>
+                    <h2>Internet Bank</h2>
                     <button class="open-modal" data-projeto="projeto1">Saiba mais</button>
                 </div>
 
-                <!-- <div class="projeto-card">
-                    <img src="assets/images/Pynk.png" alt="Projeto 2">
-                    <h2>Projeto 2</h2>
+                <div class="projeto-card">
+                    <img src="assets/images/Octagro.png" alt="Projeto 2">
+                    <h2>Controle de Grãos</h2>
                     <button class="open-modal" data-projeto="projeto2">Saiba mais</button>
                 </div>
-
+                <!--
                 <div class="projeto-card">
                     <img src="assets/images/Pynk.png" alt="Projeto 3">
                     <h2>Projeto 3</h2>
@@ -70,33 +72,50 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2 id="modal-title"></h2>
-            <p id="modal-description"></p>
+            <div id="modal-body"></div>
             <a id="modal-link" href="#" target="_blank" class="modal-link">Ver no GitHub</a>
         </div>
     </div>
-
-    <script src="assets/js/Neve.js"></script>
     <script>
-        setInterval(createSnowflake, 200);
 
         document.addEventListener("DOMContentLoaded", function () {
             const modalButton = document.querySelectorAll(".open-modal");
             const modal = document.getElementById("modal-projeto");
             const closeButton = document.querySelector(".close");
             const modalTitle = document.getElementById("modal-title");
-            const modalDescription = document.getElementById("modal-description");
+            const modalDescription = document.getElementById("modal-body");
             const modalLink = document.getElementById("modal-link");
 
             const projetos = {
                 "projeto1": {
-                    titulo: "Internet Bank - Py.nk",
-                    descricao: "Atuei como desenvolvedor backend, sendo responsável pela lógica das operações financeiras, gerenciamento de dados e funcionalidades do sistema. Também apoiei a equipe com minha experiência em programação, auxiliando na resolução de problemas e integração do sistema. Minhas contribuições incluíram: validações de senha e CPF, extrato do gerente geral, filtros, integração de telas, requisições para gerente e correções de erros.",
-                    link: "https://github.com/pynkAPI/API-1-DSM_22"
+                    titulo: "Internet Bank <br> Py.nk",
+                    descricao: `
+                        <p>Atuei como desenvolvedor backend, focado na lógica das operações financeiras, gerenciamento de dados e integração do sistema. 
+                        Também ofereci suporte técnico à equipe, auxiliando na resolução de problemas e garantindo o alinhamento das entregas.</p>
+                        <ul>
+                            <li>Validação de senha e CPF</li>
+                            <li>Geração de extrato do gerente geral</li>
+                            <li>Criação de filtros de dados</li>
+                            <li>Integração das telas do sistema</li>
+                            <li>Desenvolvimento das telas de requisições para gerente</li>
+                            <li>Correção de erros e bugs</li>
+                        </ul>
+                    `,
+                    link: "https://github.com/Yetgvg/API-1-DSM"
                 },
                 "projeto2": {
-                    titulo: "Projeto 2",
-                    descricao: "Descrição do segundo projeto, suas funcionalidades e tecnologias utilizadas.",
-                    link: "https://github.com/seuRepositorio/projeto2"
+                    titulo: "Controle de Grãos <br> Octagro",
+                    descricao: `
+                        <p>Atuei como Product Owner (PO) focado na comunicação entre o cliente e o time de desenvolvimento. 
+                        Garanti o alinhamento entre as expectativas e a execução do projeto. Minhas principais contribuições:</p>
+                        <ul>
+                            <li>Definição dos requisitos</li>
+                            <li>Elaboração das tasks</li>
+                            <li>Prototipação das wireframes</li>
+                            <li>Planejamento da arquitetura da aplicação</li>
+                        </ul>
+                    `,
+                    link: "https://github.com/Yetgvg/OctAgro-API"
                 },
                 "projeto3": {
                     titulo: "Projeto 3",
@@ -123,8 +142,8 @@
             modalButton.forEach(button => {
                 button.addEventListener("click", function () {
                     const projetoId = this.getAttribute("data-projeto");
-                    modalTitle.textContent = projetos[projetoId].titulo;
-                    modalDescription.textContent = projetos[projetoId].descricao;
+                    modalTitle.innerHTML = projetos[projetoId].titulo;
+                    modalDescription.innerHTML = projetos[projetoId].descricao;
                     modalLink.href = projetos[projetoId].link;
                     modal.style.display = "flex";
                 });
